@@ -1,0 +1,187 @@
+/* Global */
+
+* {
+    padding: 0;
+    margin 0;
+    text-decoration: none;
+    color: #000;
+}
+
+body {
+    padding-left: calc(50vw - 600px);
+    padding-right: calc(50vw - 600px);
+}
+
+/* Header */
+
+.header__bar {
+    width: 1200px;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: solid black 2px;
+}
+
+.header__title {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.link__sheet {
+    display: flex;
+    width: 100px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border: solid black 1px;
+    border-top: none;
+    margin-top: 0;
+}
+
+.link__sheet:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+/* Content */
+
+main {
+    width: 1000px;
+    margin: 50px auto 100px auto;
+}
+
+.main__content {
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.page__title {
+    font-weight: 800;
+    font-size: 40px;
+}
+
+/* Items */
+
+.item__card {
+    width: 300px;
+    min-height: 400px;
+
+    display: flex;
+    border: solid 1px;
+    flex-flow: column;
+    padding: 5px;
+    justify-content: flex-start;
+}
+
+.item__card:hover {
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+.card__img__box{
+    margin: 0;
+    width: 300px;
+    height: 400px;
+
+}
+
+.card__img {
+    max-width: 300px;
+    display: flex;
+}
+
+.item__card__title {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.item__card__text {
+    margin-top: 10px;
+    font-weight: normal;
+    font-size: 14px;
+
+}
+
+/* Catalog */
+
+.container__column: {
+    flex-flow: column;
+}
+
+.wide__card {
+    min-width: 800px;
+    min-height: 150px;
+    display: flex;
+    flex-flow: row;
+    max-height: 150px;
+    align-items: center;
+}
+
+
+.icony__img {
+    max-width: 100px;
+    max-height: 100px;
+    margin-right: 40px;
+}
+
+/* Contacts */
+
+.contacts__sheet {
+    justify-content: left;
+    display: flex;
+    width: 100%;
+}
+
+ul {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    list-style-type: none;
+}
+
+li {
+    font-size: 20px;
+    line-height: 150%;
+}
+
+/* Footer */
+
+footer {
+    width: 1200px;
+    height: 50px;
+    display: flex;
+
+    border-top: solid 2px black;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.footer__menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-flow: inline;
+    padding: 0;
+}
+
+.footer__link {
+    display: flex;
+    margin: 0;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 10px;
+    font-style: italic;
+}
+
+.footer__link:hover {
+    background-color: #ccc;
+}

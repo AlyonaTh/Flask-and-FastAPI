@@ -1,0 +1,33 @@
+{% extends 'basic.html' %}
+
+{% block title %}
+{{ super() }} - {{ contacts_content.title }}
+{% endblock %}
+
+{% block header %}
+{{ super() }}
+{% endblock %}
+
+{% block main %}
+<h2 class="page__title">{{ contacts_content.title }}</h2>
+<div class="main__content">
+    <div class="contacts__sheet">
+        <ul>
+            <li>Address:
+                <ul>
+                    <li>{{ contacts_content.address.country }}</li>
+                    <li>{{ contacts_content.address.city }}</li>
+                    <li>{{ contacts_content.address.street }}</li>
+                    <li>{{ contacts_content.address.office }}</li>
+                </ul>
+            </li>
+            <li>Phone: {{ contacts_content.phone }}</li>
+        </ul>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block footer %}
+{{ super() }}
+{% endblock %}

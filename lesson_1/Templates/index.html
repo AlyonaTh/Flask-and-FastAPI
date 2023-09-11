@@ -1,0 +1,24 @@
+{% extends 'basic.html' %}
+
+{% block title %}
+{{ super() }} - {{ title }}
+{% endblock %}
+
+{% block header %}
+{{ super() }}
+{% endblock %}
+
+{% block main %}
+<div>
+    <h2>About</h2>
+    <p>Узнать о фреймворке Flask</p>
+    <p>Узнать о способах передачи html-кода от сервера клиенту</p>
+    <p>Изучить работу с шаблонизатором Jinja</p>
+    <p>Разобраться с наследованием шаблонов</p>
+</div>
+
+{% endblock %}
+
+{% block footer %}
+{{ super() }}
+{% endblock %}

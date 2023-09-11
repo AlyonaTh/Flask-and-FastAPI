@@ -1,0 +1,30 @@
+{% extends 'basic.html' %}
+
+{% block title %}
+{{ super() }} - {{ title }}
+{% endblock %}
+
+{% block header %}
+{{ super() }}
+{% endblock %}
+
+{% block main %}
+<h2 class="page__title">Jacket</h2>
+<div class="main__content">
+    {% for item_card in item_cards %}
+    <div class="item__card">
+        <div class="card__img__box">
+            <img class="card__img" src="{{ item_card.image_path }}" alt="{{ title }} image">
+        </div>
+        <h3 class="item__card__title">{{ item_card.card_title }}</h3>
+        <p class="item__card__text">{{ item_card.description }}</p>
+    </div>
+    {% endfor %}
+
+</div>
+
+{% endblock %}
+
+{% block footer %}
+{{ super() }}
+{% endblock %}
