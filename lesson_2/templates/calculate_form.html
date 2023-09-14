@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+    <h2>{{ title }}</h2>
+    <form action="/calculate_form" method="post">
+        <input type="number" name="number" placeholder="Your number">
+        <input type="submit" value="Отправить">
+    </form>
+{% endblock %}

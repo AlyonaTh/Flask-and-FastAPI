@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+    <h2>{{ title }}</h2>
+    <hr>
+    <div>
+        <p>Введённое число: {{ a_number }}</p>
+        <p>Квадрат числа: {{ number_sq }}</p>
+    </div>
+
+{% endblock %}
