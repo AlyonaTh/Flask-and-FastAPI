@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class='navigation'>
+
+    </nav>
+    <div class="main">
+    {% for cat in category %}
+        <li>
+            <a href="{{ url_for(cat.func_name) }}">{{ cat.title }}</a>
+        </li>
+    {% endfor %}
+
+    {% block content %} {% endblock %}
+
+    </div>
+    <footer>
+        <div>
+            <p>Copyright © 2023 PDA. All Rights Reserved.</p>
+            <p>RU</p>
+        </div>
+    </footer>
+</body>
+</html>

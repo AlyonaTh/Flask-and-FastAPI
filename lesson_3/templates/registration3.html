@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block title %}
+Registration 3
+{% endblock %}
+
+{% block content %}
+    <h1>Registration 3 page</h1>
+    <form method="POST" action="{{ url_for('registration3') }}">
+        {{ form.csrf_token }}
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        <p>
+            {{ form.name.label }}<br>
+            {{ form.name(size=32) }}
+        </p>
+        <p>
+            {{ form.surname.label }}<br>
+            {{ form.surname(size=32) }}
+        </p>
+        <p>
+            {{ form.email.label }}<br>
+            {{ form.email(size=32) }}
+        </p>
+        <p>
+            {{ form.password.label }}<br>
+            {{ form.password(size=32) }}
+        </p>
+        <p>
+            {{ form.confirm_password.label }}<br>
+            {{ form.confirm_password(size=32) }}
+        </p>
+        <p>
+            {{ form.check.label }}<br>
+            {{ form.check }}
+        </p>
+        <p>
+        <input type="submit" value="Login">
+        </p>
+    </form>
+{% endblock %}

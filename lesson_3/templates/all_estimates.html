@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}
+All estimates
+{% endblock %}
+
+{% block content %}
+    <h1>List of estimates</h1>
+
+    {% for student in students %}
+        <li> {{ student.name }} - {{ student.estimates }} </li>
+    {% endfor %}
+{% endblock %}

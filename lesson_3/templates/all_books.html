@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}
+All students
+{% endblock %}
+
+{% block content %}
+    <h1>List of books</h1>
+
+    {% for book in books %}
+        <li> {{ book.title }} - {{ book.author_name }} </li>
+    {% endfor %}
+{% endblock %}
